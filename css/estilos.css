@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    /*font-weight: 400;*/
+    src: local('Dancing Script Regular');
+
+}
+
+body{
+  background-color: #02010a;
+  font-family: 'Dancing Script';
+  font-style: normal;
+  max-width:900px;
+	width:100%;
+  margin: 0 auto;
+
+
+}
+header{
+  background-color: #5b7989;
+  border-radius:10px 10px 0px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  color: white;
+}
+#logo h1{
+  -webkit-filter:drop-shadow(2px 2px 2px #02010a);
+  filter:drop-shadow(2px 2px 2px #02010a);
+}
+
+#menu ul li{
+
+  display: inline-flex;
+  text-align: right;
+  margin: 0 0 15px 15px;
+  padding-top: 4%;
+
+}
+#menu a{
+
+  color: white;
+}
+
+#menu a::selection{
+  text-decoration: none;
+  color: white;
+}
+
+#secundario p{
+  text-align: center;
+}
+#secundario a{
+  color: black;
+}
+#central{
+  background-color:  #82c3a6;
+  display: flex;
+  justify-content: center;
+
+
+}
+#secundario{
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+#central1  #imagen1 img{
+
+  -webkit-filter:drop-shadow(2px 2px 2px #02010a);
+  filter:drop-shadow(2px 2px 2px #02010a);
+}
+#secundario1 #imagen2 img{
+  -webkit-filter:drop-shadow(2px 2px 2px #02010a);
+  filter:drop-shadow(2px 2px 2px #02010a);
+}
+#secundario2 #imagen3 img{
+  -webkit-filter:drop-shadow(2px 2px 2px #02010a);
+  filter:drop-shadow(2px 2px 2px #02010a);
+}
+
+
+#galeria-imagenes{
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+
+}
+#galeria-imagenes img {
+	width: 220px;
+
+}
+
+#galeria-imagenes .imagen1 img{
+    /*width: 100%;*/
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+#galeria-imagenes .imagen3 img{
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+#galeria-imagenes .imagen2, .imagen4, .imagen6 img{
+/*width: 100%;*/
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#galeria-imagenes .imgen1, .imagen2, .imagen3, .imagen4, .imagen5, .imagen6 img{
+  -webkit-filter:drop-shadow(2px 2px 2px #02010a);
+  filter:drop-shadow(2px 2px 2px #02010a);
+}
+
+footer {
+  /*clear: both;*/
+  background-color: #C6d5c5;
+  border-radius:0px 0px 10px 10px;
+  padding-left: 2.5rem;
+
+
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-align-items: stretch;
+
+  display: -moz-flex;
+  -moz-flex-flow: row wrap;
+  -moz-align-items: stretch;
+
+
+  display: -ms-flex;
+  -ms-flex-flow: row wrap;
+  -ms-align-items:stretch;
+
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+
+}
+
+footer div{
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  position: relative;
+}
+
+#contacto {
+  -webkit-flex: 1 0 7rem;
+  -moz-flex: 1 0 7rem;
+  -ms-flex: 1 0 7rem;
+  flex: 1 0 7rem;
+}
+
+#terminos{
+  -webkit-flex: 1 0 3rem;
+  -moz-flex: 1 0 3rem;
+  -ms-flex: 1 0 3rem;
+  flex: 1 0 3rem;
+}
+
+#redsocial {
+
+  -webkit-flex: 1 0 7rem;
+  -moz-flex: 1 0 7rem;
+  -ms-flex: 1 0 7rem;
+  flex: 1 0 7rem;
+}
+
+#derechos {
+  -webkit-flex: 1 0 7rem;
+  -moz-flex: 1 0 7rem;
+  -ms-flex: 1 0 7rem;
+  flex: 1 0 7rem;
+}
+
+
+
+#secundario1 #imagen2 img:hover {
+	-ms-transform: rotate(10deg);     /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+	transform: rotate(10deg);
+
+}
+#imagen2{
+  box-shadow: 0px 0px 2px #82c3a6;
+   -webkit-box-shadow: 0px 0px 2px #82c3a6;
+   -moz-box-shadow: 0px 0px 2px #82c3a6;
+}
+
+
+#imagen3{
+
+ box-shadow: 0px 0px 2px #82c3a6;
+  -webkit-box-shadow: 0px 0px 2px #82c3a6;
+  -moz-box-shadow: 0px 0px 2px #82c3a6;
+
+}
+#secundario2 #imagen3 img:hover {
+  transform: translate(20px,-10px);
+  -ms-transform: translate(20px,-10deg);     /* IE 9 */
+	-webkit-transform: translate(20px,-10deg); /* Chrome, Safari, Opera */
+
+}
+
+@media (min-width:900px){
+  body{
+    display: block;
+    width: 100%;
+  }
+}
+@media  (max-width: 420px) {
+
+
+      section {
+        padding-left: 0;
+        padding-right: 0;
+
+        flex-flow: column wrap;
+        }
+
+      #central1 {
+        -webkit-flex: 1 0 10rem;
+        -moz-flex: 1 0 10rem;
+        -ms-flex: 1 0 10rem;
+        flex: 1 0 10rem;
+      }
+      #secundario div{
+        width: 100%;
+      }
+
+              #secundario1 {
+                -webkit-flex: 1 0 10rem;
+                -moz-flex: 1 0 10rem;
+                -ms-flex: 1 0 10rem;
+                flex: 1 0 10rem;
+              }
+              #secundario2 {
+                -webkit-flex: 1 0 10rem;
+                -moz-flex: 1 0 10rem;
+                -ms-flex: 1 0 10rem;
+                flex: 1 0 10rem;
+              }
+
+        body {
+          padding-bottom: 0;
+          background-image: none;
+          background-color: white;
+        }
+      header{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+      }
+      #logo h1{
+
+        margin: 15px 15px 15px 15px;
+        color: white;
+        text-align: center;
+      }
+
+
+        footer {
+          padding: 0 1rem 0;
+          display: flex;
+          flex-flow: column wrap;
+
+        }
+
+        footer div{
+          width: 100%
+          /*margin: 1rem 0.5rem;
+          padding: 0.5rem;*/
+          position: relative;
+        }
+
+
+
+      }
